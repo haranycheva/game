@@ -12,7 +12,7 @@ function animate() {
   frogger.update();
   requestAnimationFrame(animate);
 
-  handleObstacles();
+  handleObstacles()
   handlScoreBoard();
   ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
   frame++;
