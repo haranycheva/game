@@ -64,27 +64,26 @@ function handleParticles() {
       particlesArray.unshift(new Particle(frogger.x, frogger.y));
     }
   }
-
 }
 
 function handleRiples() {
-    for (let i = 0; i < ripplesArray.length; i += 1) {
-      ripplesArray[i].ripple();
-      ripplesArray[i].drawRipple();
-    }
-    if (ripplesArray.length > 20) {
-      for (let i = 0; i < 2; i += 1) {
-        ripplesArray.pop();
-      }
-    }
-
-    if (
-      (keys[37] || keys[38] || keys[39] || keys[40]) &&
-      frogger.y < 250 &&
-      frogger.y > 100
-    ) {
-      for (let i = 0; i < 20; i += 1) {
-        ripplesArray.unshift(new Particle(frogger.x, frogger.y));
-      }
+  for (let i = 0; i < ripplesArray.length; i += 1) {
+    ripplesArray[i].ripple();
+    ripplesArray[i].drawRipple();
+  }
+  if (ripplesArray.length > 20) {
+    for (let i = 0; i < 2; i += 1) {
+      ripplesArray.pop();
     }
   }
+
+  if (
+    (keys[37] || keys[38] || keys[39] || keys[40]) &&
+    frogger.y < 250 &&
+    frogger.y > 100
+  ) {
+    for (let i = 0; i < 20; i += 1) {
+      ripplesArray.unshift(new Particle(frogger.x, frogger.y));
+    }
+  }
+}
