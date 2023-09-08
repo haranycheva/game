@@ -40,24 +40,24 @@ const logsArray = [];
 
 // * img
 const background_lvl2 = new Image();
-background_lvl2.src = '../img/background_lvl2.png'
+background_lvl2.src = './img/background_lvl2.png'
 
 const grass = new Image();
-grass.src = "../img/grass.png";
+grass.src = "./img/grass.png";
 
 const collisions = new Image();
-collisions.src = "../img/collisions.png"
+collisions.src = "./img/collisions.png"
 
 const turtle = new Image();
-turtle.src = "../img/turtles.png";
+turtle.src = "./img/turtles.png";
 
 const log = new Image();
-log.src = "../img/log.png";
+log.src = "./img/log.png";
 
 const car = new Image();
-car.src = "../img/cars.png";
+car.src = "./img/cars.png";
 
 const froggerSprite = new Image()
-froggerSprite.src = "../img/frog_spritesheet.png"
+froggerSprite.src = "./img/frog_spritesheet.png"
 
 let numberOfCars = 3;
